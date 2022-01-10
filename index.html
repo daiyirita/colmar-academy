@@ -2,8 +2,9 @@
 <html>
     <head lang="en" dir="ltr">
         <link rel="stylesheet" href="resources/css/style.css" type="text/css">
+        <meta name="viewport" content="width=800, initial-scale=1">
         <meta charset="utf-8">
-        <title></title>
+        <title>Colmar Academy</title>
     </head>
     <body>
         <header>
@@ -11,16 +12,14 @@
                 <a href="index.html">
                 <div class="company">
                     <img src="./resources/images/ic-logo.svg">
-                    <p class="logo i pc">Colmar</p>
-                    <p class="logo ii pc">ACADEMY</p>
+                    <p class="logo i" id="pc">Colmar</p>
+                    <p class="logo ii" id="pc">ACADEMY</p>
                 </div></a>
-                <div class="mobile">
-                    <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="On Campus"></a>
-                    <a href="#"><img src="./resources/images/ic-online.svg" alt="Online"></a>
-                    <a href="#"><img src="./resources/images/ic-login.svg" alt="Sign in"></a>
-                </div>
             </div>
-            <nav>
+            <a href="#"><img src="./resources/images/ic-on-campus.svg" alt="On Campus" class="mobile"></a>
+            <a href="#"><img src="./resources/images/ic-online.svg" alt="Online" class="mobile"></a>
+            <a href="#"><img src="./resources/images/ic-login.svg" alt="Sign in" class="mobile"></a>
+            <nav class="pc">
                 <ul>
                     <li><a href="#">On Campus</a></li>
                     <li><a href="#">Online</a></li>
@@ -47,7 +46,7 @@
                 </div>
                 <div class="column">
                     <div class="column a">
-                        <img src="./resources/images/information-orientation.jpg">
+                        <img src="./resources/images/information-orientation.jpg" class="pc">
                         <img src="./resources/images/information-orientation-mobile.jpg" class="mobile">
                         <div class="right">
                             <h3>Orientation Date</h3>
@@ -56,7 +55,7 @@
                         </div>
                     </div>
                     <div class="column b">
-                        <img src="resources/images/information-campus.jpg">
+                        <img src="resources/images/information-campus.jpg" class="pc">
                         <img src="./resources/images/information-campus-mobile.jpg" class="mobile">
                         <div class="right">
                             <h3>Our Campus</h3>
@@ -65,7 +64,7 @@
                         </div>
                     </div>
                     <div class="column c" id="gray">
-                        <img src="resources/images/information-guest-lecture.jpg">
+                        <img src="resources/images/information-guest-lecture.jpg" class="pc">
                         <img src="./resources/images/information-guest-lecture-mobile.jpg" class="mobile">
                         <div class="right">
                             <h3>Our guest lecture</h3>
@@ -127,14 +126,26 @@
                         ex. Etiam eget magna laoreet, efficitur dolor consequat, tristique ligula."</h4>
                 </div>
                 <div class="column pc">
-                    <div class="culumn a" id="gray"></div>
-                    <div class="culumn b"></div>
+                    <div class="culumn a" id="gray">
+                        <img src="./resources/images/thesis-fisma.jpg">
+                        <div class="right">
+                            <h3>Fisma: Design and Prototype</h3>
+                            <h4>Designer showcase of new prototype product</h4>
+                        </div>
+                    </div>
+                    <div class="culumn b">
+                        <img src="./resources/images/thesis-now-and-then.jpg">
+                        <div class="right">
+                            <h3>Now and then</h3>
+                            <h4>Research study about New York</h4>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
         <footer>
             <h5>© 2022 Colmar Academy. All rights reserved</h5>
-            <nav>
+            <nav class="pc">
                 <ul>
                     <li><a href="#">Terms</a></li>
                     <li><a href="#">Privacy</a></li>

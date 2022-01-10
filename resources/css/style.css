@@ -7,6 +7,11 @@ html, body {
 .mobile {
     display: none;
 }
+
+.pc {
+    display: none;
+}
+
 header {
     display: inline-flex;
     height: 4rem;
@@ -23,7 +28,6 @@ header {
 
 header .logo {
     display: inline-block;
-    justify-items: flex-start;
 }
 
 header a {
@@ -54,14 +58,17 @@ header p {
 
 .ii {
     color: gray;
+    
 }
 
 .i {
     color: #1f1f1f;
+    display: inline-block;
 }
 
 ul {
     list-style-type: none;
+    display: inline-block;
 
 }
 
@@ -70,3 +77,27 @@ li {
     padding: 0 1rem;
 }
 
+@media only screen and (min-width: 799px) {
+    .mobile {
+        display: none;
+    }
+
+    .pc {
+        display: block;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    .mobile {
+        display: inline-block;
+        vertical-align: middle;
+        display: inline-block;
+    }
+    .company{
+        justify-content: space-between;
+    }
+
+    .pc, #pc {
+        display: none;
+    }
+}
