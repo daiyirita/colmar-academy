@@ -19,10 +19,23 @@ h1 {
     color: #3f3f3f;
 }
 
+h2 {
+    font-size: 2.25rem;
+    font-weight: 900;
+    color: #3f3f3f;
+}
+
 h3 {
     font-size: 2rem;
     font-weight: 500;
     color: #4f4f4f;
+}
+
+h4 {
+    font-size: 1.5rem;
+    font-weight: 300;
+    color: #6f6f6f;
+    font-family: Arial, Helvetica, sans-serif;
 }
 
 /*** header */
@@ -90,11 +103,30 @@ li {
     display: inline;
     padding: 0 1rem;
 }
+/** main **/
 
-/** section banner **/
+main {
+    position: relative;
+    top: 4rem;
+}
+
+/***intro section*/
+
+.intro {
+    margin-bottom: 2rem;
+    position: relative;
+}
 
 
 
+.right {
+    margin-left: 1rem;
+}
+
+.intro a {
+    color: dodgerblue;
+    text-decoration: none;
+}
 
 
 /** media query **/
@@ -106,7 +138,7 @@ li {
     .pc {
         display: block;
     }
-
+    /** section banner **/
     .banner {
         height: auto;
         width: 100%;
@@ -114,8 +146,6 @@ li {
         display: inline-grid;
         grid-template: repeat(6, 1fr)/ 60% 40%;
         grid-column-gap: 1.5rem;  
-        position: relative;
-        top: 4rem;
     }
     
     .banner img {
@@ -132,12 +162,11 @@ li {
         justify-content: left;
         align-content: center;
         padding: 5rem 1.5rem;
-        margin-right: 15%;
+        margin-right: 10%;
     }
     
     .banner h1 {
         text-align: left;
-    
     }
     
     .banner h3 {
@@ -157,7 +186,68 @@ li {
         text-decoration: none;
     }
     
-    
+    /***intro section*/
+
+    .intro {
+        margin: 2rem 0 2rem 1.5rem;
+        grid-template-columns: 60% 40%;
+        grid-column-gap: 1.5rem;
+        display: grid;
+    }
+
+    .main {
+        margin: 2rem 0 2rem 1.5rem;
+        display: inline-grid;
+
+    }
+    .main img {
+        max-width: 100%;
+        max-height: 100%;
+        padding-right: 1.5rem;
+    }
+
+    .intro .column {
+        grid-template-rows: repeat(3, 1fr); 
+        justify-content: left;
+        align-content: center;
+        display: grid;
+        border-left: 1px solid lightgray;
+    }
+
+    .item {
+        display: grid;
+        grid-template-columns: 35% 65%;
+        border-bottom: 1px solid lightgray;
+    }
+
+    .right {
+        display: block;
+        flex-flow: row wrap;
+        align-content: center;
+        justify-content: left;
+        margin-left: 10%;
+
+    }
+    .a img{
+        grid: 1 / 1 / span 1/ span 1; 
+    }
+
+    .b img{
+        grid: 2 / 1 / span 1/ span 1; 
+    }
+    .c img{
+        grid: 3 / 1 / span 1/ span 1; 
+    }
+
+    #gray {
+        background-color: lightgray;
+    }
+
+    .column img {
+        max-width: 100%;
+        max-height: 100%; 
+        margin: 1rem;
+    }
 }
 
 @media only screen and (max-width: 800px) {
@@ -169,13 +259,11 @@ li {
     .company{
         justify-content: space-between;
     }
-
+    /** section banner **/
     .banner {
         height: auto;
         width: 100%;
         background-color: lightgray; 
-        position: relative;
-        top: 4rem;
         padding-bottom: 2rem;
     }
     
@@ -218,6 +306,36 @@ li {
         text-decoration: none;
     }
 
+    /***intro section*/
+
+    .intro {
+        margin: 1rem 1rem 2rem 1rem;
+    }
+
+    
+
+    .column img {
+        justify-self: center;
+        width: 100%;
+        height: auto;
+    }
+
+    .a {
+        margin-bottom: 4rem;
+    }
+
+    .b {
+        margin-bottom: 4rem;
+    }
+
+    .c{
+        margin-bottom: 4rem;
+    }
+
+    .column .right {
+        justify-self: left;
+    }
+    
     .pc, #pc {
         display: none;
     }
