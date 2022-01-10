@@ -32,7 +32,7 @@ h3 {
 }
 
 h4 {
-    font-size: 1.5rem;
+    font-size: 1.25rem;
     font-weight: 300;
     color: #6f6f6f;
     font-family: Arial, Helvetica, sans-serif;
@@ -117,8 +117,6 @@ main {
     position: relative;
 }
 
-
-
 .right {
     margin-left: 1rem;
 }
@@ -126,6 +124,12 @@ main {
 .intro a {
     color: dodgerblue;
     text-decoration: none;
+}
+
+/**course section**/
+
+.courses h2 {
+    text-align: center;
 }
 
 
@@ -196,7 +200,6 @@ main {
     }
 
     .main {
-        margin: 2rem 0 2rem 1.5rem;
         display: inline-grid;
 
     }
@@ -218,14 +221,14 @@ main {
         display: grid;
         grid-template-columns: 35% 65%;
         border-bottom: 1px solid lightgray;
+        margin-right: 5%;
     }
 
     .right {
         display: block;
-        flex-flow: row wrap;
         align-content: center;
         justify-content: left;
-        margin-left: 10%;
+        margin: auto 10%;
 
     }
     .a img{
@@ -243,10 +246,48 @@ main {
         background-color: lightgray;
     }
 
+    .item h3 {
+        margin: 0.5rem 0;
+    }
+    .item h4 {
+        margin: 0.5rem 0;
+    }
+
     .column img {
         max-width: 100%;
         max-height: 100%; 
         margin: 1rem;
+    }
+
+    /**course section**/
+
+    .courses {
+        background-color: #ebebeb;
+        padding: 2rem 4.5rem;
+        background-color: #ebebeb;
+    }
+
+    .grid {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: repeat(2, 1fr);
+        grid-gap: 2rem;
+    }
+
+    .course {
+        background-color: white;
+    }
+
+    .course img {
+        width: 100%;
+        height: auto;
+    }
+    .course .container {
+        margin: 1rem 1rem 1.5rem;
+    }
+
+    .course h4 {
+        margin-top: 0.5rem;
     }
 }
 
@@ -256,9 +297,17 @@ main {
         vertical-align: middle;
         display: inline-block;
     }
+
+    .pc, #pc {
+        display: none;
+    }
+
+    /** header **/
     .company{
         justify-content: space-between;
     }
+    
+
     /** section banner **/
     .banner {
         height: auto;
@@ -306,13 +355,11 @@ main {
         text-decoration: none;
     }
 
-    /***intro section*/
+    /**intro section**/
 
     .intro {
         margin: 1rem 1rem 2rem 1rem;
     }
-
-    
 
     .column img {
         justify-self: center;
@@ -320,23 +367,25 @@ main {
         height: auto;
     }
 
-    .a {
-        margin-bottom: 4rem;
-    }
-
-    .b {
-        margin-bottom: 4rem;
-    }
-
-    .c{
+    .item {
         margin-bottom: 4rem;
     }
 
     .column .right {
         justify-self: left;
     }
-    
-    .pc, #pc {
-        display: none;
+
+    /** course section **/
+    .courses {
+        border-top: 1px solid whitesmoke;
+        padding: 2rem 1rem;
     }
+
+    .courses h3 {
+        background-color: lightgray;
+        padding: 1rem 1rem 1.5rem;
+        margin: 0.5rem 0;
+    }
+    
+
 }
