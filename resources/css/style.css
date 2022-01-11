@@ -160,10 +160,9 @@ footer h4 {
 
 
 /** media query **/
-@media only screen and (min-width: 799px) {
+@media only screen and (min-width: 800px) {
     .mobile {
         display: none;
-
     }
 
     .pc {
@@ -361,7 +360,7 @@ footer h4 {
     }
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 799px) {
     .mobile {
         display: inline-block;
         vertical-align: middle;
@@ -456,14 +455,23 @@ footer h4 {
         padding: 2rem 1rem;
     }
 
+    .container {
+        display: none;
+    }
+
     .courses h3 {
         background-color: lightgray;
         padding: 1rem 1rem 1.5rem;
         margin: 0.5rem 0;
     }
+
     /** thesis **/
     .thesis {
         padding-bottom: 1.5rem;
+    }
+
+    video {
+        width: 100%;
     }
     /** footer **/
     
